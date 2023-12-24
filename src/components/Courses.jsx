@@ -34,9 +34,7 @@ function CourseList() {
 
   return (
     <div
-    // className={`absolute top-[4rem]  hidden ${
-    //   true ? "block" : null
-    // } group-hover:block bg-white border `}
+      className={`absolute top-[4rem]  hidden group-hover:block bg-white border `}
     >
       <ul className=" relative ">
         {courses.map((course) => (
