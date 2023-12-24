@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+  @media only screen and (max-width: 976px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+@layer base {
+  .text-primary {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+
+  .text-secondary {
+    @apply max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply h-9 px-4 inline-flex items-center justify-center border-0 rounded-md  transition duration-200 text-white;
+  }
+
+  .btn:hover {
+    @apply opacity-90;
+  }
+
+  /* .btn:active {
+    @apply shadow-2xl translate-y-0.5 ease-linear transition-all duration-100;
+  } */
+
+  .btn-blue {
+    @apply bg-blue-500;
+  }
+  .btn-cyan {
+    @apply bg-cyan-500;
+  }
+  .btn-white {
+    @apply bg-white;
+  }
+  .btn-red {
+    @apply bg-red-500;
+  }
+}
+
+/* @layer base {
+  h1 {
+    font-size: 10rem;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-4 border-0 rounded-lg font-bold text-xl m-4 animate-spin-slow focus:text-2xl;
+    mt: theme("spacing.128");
+  }
+
+  .btn-blue {
+    @apply bg-blue-500;
+  }
+  .btn-green {
+    @apply bg-green-500;
+  }
+} */
