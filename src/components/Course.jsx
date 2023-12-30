@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Topics from "./Topics";
 import { useState } from "react";
 
+import { formatName } from "./Topic";
 // eslint-disable-next-line react/prop-types
 function Course({ name, id }) {
   const [isHover, setIsHover] = useState(false);
@@ -11,12 +12,10 @@ function Course({ name, id }) {
   }
 
   return (
-    <li>
+    <li className="flex" onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <Link
-        onMouseEnter={handleHover}
-        onMouseLeave={handleHover}
-        className="text-darkGrayishBlue text-sm flex h-12 px-4 justify-between items-center w-64 transition-all duration-300 hover:pl-6 hover:bg-slate-100 "
-        to="/courses/data-structure"
+        className={`links  ${isHover ? "isHovered" : ""}`}
+        to={`course/${formatName(name)}`}
       >
         <h3>{name}</h3>
         <span>

@@ -1,11 +1,23 @@
+// module.exports = {
+//   content: [
+//     "./src/**/*.{html,js,ts,jsx,tsx,mdx}",
+//     "./**/@material-tailwind/**/*.{html,js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {},
+//   plugins: [],
+// };
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx,mdx}",
+    "./**/@material-tailwind/**/*.{html,js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     screens: {
       sm: "480px",
       md: "768px",
-      lg: "976px",
+      lg: "1200px",
       xl: "1440px",
     },
 
@@ -14,6 +26,7 @@ export default {
         primaryDarkBlue: "#1803A5",
         primaryLightkBlue: "#408ec6",
         primaryDarkRed: "#7a2048",
+        lightGray: "#d3d3d3",
         strongCyan: "hsl(171, 66%, 44%)",
         lightBlue: "hsl(233, 100%, 69%)",
         darkGrayishBlue: "hsl(210, 10%, 33%)",

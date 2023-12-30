@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
+export function formatName(name) {
+  const nameFormated = String(name).replaceAll(" ", "-");
+  return nameFormated;
+}
 function Topic({ name }) {
   return (
     <li>
-      <Link
-        // onMouseEnter={handleHover}
-        // onMouseLeave={handleHover}
-        className="text-darkGrayishBlue text-sm inline-flex h-12 px-4 justify-between items-center w-64 transition-all duration-300 hover:pl-6 hover:bg-slate-100 "
-        to="/courses/data-structure"
-      >
+      <Link className="links" to={`topic/${formatName(name)}`}>
         <h3>{name}</h3>
         <span className="hidden">
           <svg

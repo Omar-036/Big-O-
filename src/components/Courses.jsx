@@ -25,6 +25,11 @@ const initCourses = [
         name: "Red Black Tree",
         description: "Red Black Tree Description",
       },
+      {
+        id: 2,
+        name: "Matrix Chain Multiplication",
+        description: "Matrix Chain Multiplication Description",
+      },
     ],
   },
 ];
@@ -34,7 +39,7 @@ function CourseList() {
 
   return (
     <div
-      className={`absolute top-[4rem]  hidden group-hover:block bg-white border `}
+      className={`absolute top-[4rem]  hidden  group-hover:block bg-white border `}
     >
       <ul className=" relative ">
         {courses.map((course) => (

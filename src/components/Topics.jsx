@@ -4,8 +4,6 @@ import Topic from "./Topic";
 function Topics({ id }) {
   const x = useCourses();
   const f = x.courses.find((course) => course.id === id);
-  console.log(x.courses);
-  console.log(f);
 
   return (
     <div className="absolute bg-white border  top-[-1px] left-[100%]  ">

@@ -28,6 +28,11 @@ const initCourses = [
         name: "Red Black Tree",
         description: "Red Black Tree Description",
       },
+      {
+        id: 2,
+        name: "Matrix Chain Multiplication",
+        description: "Matrix Chain Multiplication Description",
+      },
     ],
   },
 ];
