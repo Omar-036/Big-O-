@@ -15,7 +15,7 @@ function Course({ name, id }) {
     <li className="flex" onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <Link
         className={`links  ${isHover ? "isHovered" : ""}`}
-        to={`course/${formatName(name)}`}
+        to={`/courses/${formatName(name)}`}
       >
         <h3>{name}</h3>
         <span>

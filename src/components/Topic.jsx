@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 
 export function formatName(name) {
-  const nameFormated = String(name).replaceAll(" ", "-");
+  const nameFormated = String(name).toLocaleLowerCase().replaceAll(" ", "-");
   return nameFormated;
 }
 function Topic({ name }) {
   return (
     <li>
-      <Link className="links" to={`topic/${formatName(name)}`}>
+      <Link className="links" to={`/topic/${formatName(name)}`}>
         <h3>{name}</h3>
         <span className="hidden">
           <svg
