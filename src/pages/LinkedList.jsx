@@ -7,7 +7,7 @@ function LinkedList() {
       <Header />
       <h1 className="text-center text-6xl m-12">Linked List</h1>
       <Link to="quiz">
-        <button className="bg-primaryDarkBlue block rounded-md text-3xl text-white px-4 py-2 font-semibold mx-auto mt-12">
+        <button className=" bg-primaryDarkBlue block rounded-md text-3xl text-white px-4 py-2 font-semibold mx-auto mt-12">
           Take Quiz
         </button>
       </Link>

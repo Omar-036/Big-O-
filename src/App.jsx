@@ -4,15 +4,11 @@ import Homepage from "./pages/Homepage";
 
 import Courses from "./pages/Courses";
 
-import { useCourses } from "./contexts/CoursesContext";
-import { formatName } from "./components/Topic";
 import PageNotFound from "./pages/PageNotFound";
 import LinkedList from "./pages/LinkedList";
+import QuizApp from "./pages/QuizApp";
 
 function App() {
-  const { courses } = useCourses();
-  console.log(formatName(courses[0].name));
-
   return (
     <BrowserRouter>
       <Routes>
@@ -22,7 +18,8 @@ function App() {
           <Route index element={<Courses />} />
         </Route>
         <Route path="topic">
-          <Route path="linked-list" element={<LinkedList />}></Route>
+          <Route path="linked-list" element={<LinkedList />} />
+          <Route path="linked-list/quiz" element={<QuizApp />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

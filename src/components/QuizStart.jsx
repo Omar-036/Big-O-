@@ -1,5 +1,5 @@
 function QuizStart() {
-  return <div></div>;
+  return <div>Quiz Start</div>;
 }
 
 export default QuizStart;
